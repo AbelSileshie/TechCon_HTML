@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Register for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit_registration.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="checkbox">agree to the terms and conditions, clearly described alongside:</label>
+                <input type="checkbox" name="terms" id="tandd">
+            </fieldset>
+            <fieldset>
+                <legend>Event Preferences</legend>
+                <label for="sessions">Select Sessions:</label>
+                <select id="sessions" name="sessions[]" multiple>
+                    <option value="ml_intro">Introduction to Machine Learning</option>
+                    <option value="ai_future">The Future of AI</option>
+                    <option value="cyber_security">Cyber Security Essentials</option>
+                </select><br><br>
+            </fieldset>
+            <input type="submit" value="Register">
+        </form>
+    </main>agree to the terms and conditions, clearly described alongside.
+    <footer>
+        <p>&copy; 2023 TechCon. copyright All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
